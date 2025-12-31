@@ -4,7 +4,32 @@
     <title>SAMIA AIT RAMI - Portfolio</title>
     <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css">
     <link rel="stylesheet" type="text/css" href="https://portfolio-builder.pages.dev/portfolio.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
    <style>
+
+ .project-icons {
+  display: flex;
+  gap: 12px;
+  justify-content: center;
+  margin-bottom: 12px;
+}
+
+.project-icons a {
+  font-size: 20px;
+  color: #7b2cbf;
+  background: #f5edff;
+  padding: 10px;
+  border-radius: 50%;
+  transition: .3s ease;
+}
+
+.project-icons a:hover {
+  transform: translateY(-3px) scale(1.05);
+  background: #7b2cbf;
+  color: #fff;
+}
+   
 .dark-mode-toggle {
   position: relative;
   display: inline-block;
@@ -51,29 +76,25 @@
 }
 
 .skill-progress {
-  width: 100%;
-  height: 8px;
-  background: #e6e6e6;
-  border-radius: 50px;
-  margin-top: 10px;
-  overflow: hidden;
+  background: #eee;
+  border-radius: 20px;
+  height: 10px;
+  position: relative;
+  overflow: visible;
 }
 
 .skill-bar {
-  height: 100%;
-  background: linear-gradient(90deg, #7b5cff, #b566ff);
-  border-radius: 50px;
-  transition: width 0.6s ease;
+  background: #6a00f4;
+  height: 10px;
+  border-radius: 20px;
+  position: relative;
 }
 
 .skill-percent {
-  font-size: 0.85rem;
-  font-weight: 600;
-  margin-top: 6px;
-  display: block;
-  text-align: right;
-  color: #6a6a6a;
+  font-weight: bold;
+  color: #6a00f4;
 }
+
 .skills-category-title {
   margin-top: 2.5rem;
   margin-bottom: 1rem;
@@ -260,24 +281,37 @@
     <!-- FRONTEND -->
     <h3 class="skills-category-title fade-in visible" style="text-align: center;">Frontend</h3>
     <div class="skills-grid">
+
       <div class="skill-card fade-in visible">
         <div class="skill-icon"><i class="devicon-html5-plain"></i></div>
         <div class="skill-name">HTML</div>
-        <div class="skill-progress"><div class="skill-bar" style="width: 90%"></div></div>
+
+        <div class="skill-progress">
+          <div class="skill-bar" style="width: 90%"></div>
+        </div>
+
         <span class="skill-percent">90%</span>
       </div>
 
       <div class="skill-card fade-in visible">
         <div class="skill-icon"><i class="devicon-css3-plain"></i></div>
         <div class="skill-name">CSS3</div>
-        <div class="skill-progress"><div class="skill-bar" style="width: 85%"></div></div>
+
+        <div class="skill-progress">
+          <div class="skill-bar" style="width: 85%"></div>
+        </div>
+
         <span class="skill-percent">85%</span>
       </div>
 
       <div class="skill-card fade-in visible">
         <div class="skill-icon"><i class="devicon-javascript-plain"></i></div>
         <div class="skill-name">JavaScript</div>
-        <div class="skill-progress"><div class="skill-bar" style="width: 75%"></div></div>
+
+        <div class="skill-progress">
+          <div class="skill-bar" style="width: 75%"></div>
+        </div>
+
         <span class="skill-percent">75%</span>
       </div>
     </div>
@@ -285,24 +319,37 @@
     <!-- BACKEND -->
     <h3 class="skills-category-title fade-in visible" style="text-align: center;">Backend</h3>
     <div class="skills-grid">
+
       <div class="skill-card fade-in visible">
         <div class="skill-icon"><i class="devicon-php-plain"></i></div>
         <div class="skill-name">PHP</div>
-        <div class="skill-progress"><div class="skill-bar" style="width: 60%"></div></div>
+
+        <div class="skill-progress">
+          <div class="skill-bar" style="width: 60%"></div>
+        </div>
+
         <span class="skill-percent">60%</span>
       </div>
 
       <div class="skill-card fade-in visible">
         <div class="skill-icon"><i class="devicon-java-plain"></i></div>
         <div class="skill-name">Java</div>
-        <div class="skill-progress"><div class="skill-bar" style="width: 70%"></div></div>
+
+        <div class="skill-progress">
+          <div class="skill-bar" style="width: 70%"></div>
+        </div>
+
         <span class="skill-percent">70%</span>
       </div>
 
       <div class="skill-card fade-in visible">
         <div class="skill-icon"><i class="devicon-python-plain"></i></div>
         <div class="skill-name">Python</div>
-        <div class="skill-progress"><div class="skill-bar" style="width: 80%"></div></div>
+
+        <div class="skill-progress">
+          <div class="skill-bar" style="width: 80%"></div>
+        </div>
+
         <span class="skill-percent">80%</span>
       </div>
     </div>
@@ -310,45 +357,70 @@
     <!-- TOOLS -->
     <h3 class="skills-category-title fade-in visible" style="text-align: center;">Outils</h3>
     <div class="skills-grid">
+
       <div class="skill-card fade-in visible small-skill">
         <div class="skill-icon"><i class="devicon-mysql-plain"></i></div>
         <div class="skill-name">SQL</div>
-        <div class="skill-progress"><div class="skill-bar" style="width: 65%"></div></div>
+
+        <div class="skill-progress">
+          <div class="skill-bar" style="width: 65%"></div>
+        </div>
+
         <span class="skill-percent">65%</span>
       </div>
 
       <div class="skill-card fade-in visible small-skill">
         <div class="skill-icon"><i class="devicon-vscode-plain"></i></div>
         <div class="skill-name">VS Code</div>
-        <div class="skill-progress"><div class="skill-bar" style="width: 85%"></div></div>
+
+        <div class="skill-progress">
+          <div class="skill-bar" style="width: 85%"></div>
+        </div>
+
         <span class="skill-percent">85%</span>
       </div>
 
       <div class="skill-card fade-in visible small-skill">
         <div class="skill-icon"><i class="devicon-UML-plain"></i></div>
         <div class="skill-name">UML</div>
-        <div class="skill-progress"><div class="skill-bar" style="width: 75%"></div></div>
+
+        <div class="skill-progress">
+          <div class="skill-bar" style="width: 75%"></div>
+        </div>
+
         <span class="skill-percent">75%</span>
       </div>
 
       <div class="skill-card fade-in visible small-skill">
         <div class="skill-icon"><i class="devicon-canva-plain"></i></div>
         <div class="skill-name">Canva</div>
-        <div class="skill-progress"><div class="skill-bar" style="width: 80%"></div></div>
+
+        <div class="skill-progress">
+          <div class="skill-bar" style="width: 80%"></div>
+        </div>
+
         <span class="skill-percent">80%</span>
       </div>
 
       <div class="skill-card fade-in visible small-skill">
         <div class="skill-icon"><i class="devicon-figma-plain"></i></div>
         <div class="skill-name">Figma</div>
-        <div class="skill-progress"><div class="skill-bar" style="width: 50%"></div></div>
+
+        <div class="skill-progress">
+          <div class="skill-bar" style="width: 70%"></div>
+        </div>
+
         <span class="skill-percent">70%</span>
       </div>
 
       <div class="skill-card fade-in visible small-skill">
         <div class="skill-icon"><i class="devicon-github-original"></i></div>
         <div class="skill-name">GitHub</div>
-        <div class="skill-progress"><div class="skill-bar" style="width: 75%"></div></div>
+
+        <div class="skill-progress">
+          <div class="skill-bar" style="width: 75%"></div>
+        </div>
+
         <span class="skill-percent">75%</span>
       </div>
     </div>
@@ -356,6 +428,7 @@
     <!-- SOFT SKILLS -->
     <h3 class="skills-category-title fade-in visible" style="text-align: center;">Soft Skills</h3>
     <div class="skills-grid">
+
       <div class="skill-card fade-in visible">
         <div class="skill-name">Travail en équipe</div>
         <div class="skill-progress"><div class="skill-bar" style="width: 85%"></div></div>
@@ -369,7 +442,7 @@
       </div>
 
       <div class="skill-card fade-in visible">
-        <div class="skill-name">Organisation de temps</div>
+        <div class="skill-name">Organisation du temps</div>
         <div class="skill-progress"><div class="skill-bar" style="width: 90%"></div></div>
         <span class="skill-percent">90%</span>
       </div>
@@ -385,173 +458,227 @@
         <div class="skill-progress"><div class="skill-bar" style="width: 70%"></div></div>
         <span class="skill-percent">70%</span>
       </div>
+
     </div>
 
   </div>
 </section>
 
     <!-- Projects Section -->
-    <section id="projects" class="section projects">
-            <div class="container">
-           <h2 class="section-title fade-in visible">Projets phares</h2>
-<p class="section-subtitle fade-in visible">Quelques-uns de mes travaux récents et projets personnels</p>
-                    <div class="projects-grid">
-                            
-      <div class="project-card fade-in visible">
-        <div class="project-image">
-<img src="https://i.ibb.co/Fbr9vS2p/957281f33e99.png" alt="Application de gestion des régimes des patients ">
-        </div>
-        <div class="project-content">
-          <h3 class="project-title">Application de gestion des régimes des patients </h3>
-          <p class="project-description">Développement d'une application desktop pour gérer les bons de régime des patients hospitalisés.
-</p>
-          <div class="project-tech"><span class="tech-tag">HTML</span><span class="tech-tag">CSS</span><span class="tech-tag">JavaScript</span><span class="tech-tag">VB.NET</span></div>
-          <div class="project-links">
-            
-                    <a href>le lien de projet</a>
+   <section id="projects" class="section projects">
+  <div class="container">
 
+    <h2 class="section-title fade-in visible">Projets phares</h2>
+    <p class="section-subtitle fade-in visible">
+      Quelques-uns de mes travaux récents et projets personnels
+    </p>
+
+    <div class="projects-grid">
+
+      <!-- Projet 1 -->
+      <div class="project-card fade-in visible">
+
+        <div class="project-icons">
+          <a href="#" target="_blank"><i class="fa-solid fa-link"></i></a>
+          <a href="#" target="_blank"><i class="fa-brands fa-github"></i></a>
+        </div>
+
+        <div class="project-image">
+          <img src="https://i.ibb.co/Fbr9vS2p/957281f33e99.png"
+               alt="Application de gestion des régimes des patients ">
+        </div>
+
+        <div class="project-content">
+          <h3 class="project-title">Application de gestion des régimes des patients</h3>
+
+          <p class="project-description">
+            Développement d'une application desktop pour gérer les bons de régime des patients hospitalisés.
+          </p>
+
+          <div class="project-tech">
+            <span class="tech-tag">HTML</span>
+            <span class="tech-tag">CSS</span>
+            <span class="tech-tag">JavaScript</span>
+            <span class="tech-tag">VB.NET</span>
           </div>
         </div>
       </div>
-    
-      <div class="project-card fade-in visible">
-        <div class="project-image">
-          <img src="https://i.ibb.co/MkG9Dm0m/9294a050deb8.jpg" alt="Site web de gestion des alertes citoyennes ">
-        </div>
-        <div class="project-content">
-          <h3 class="project-title">Application web de gestion des alertes citoyennes </h3>
-          <p class="project-description">Conception et développement d’un site web permettant à la commune d’envoyer automatiquement des alertes aux citoyens (annonces officielles, urgences, événements).</p>
-          <div class="project-tech"><span class="tech-tag">HTML</span><span class="tech-tag">CSS</span><span class="tech-tag">JavaScript</span><span class="tech-tag">PHP</span><span class="tech-tag">SQL et Laravel.</span></div>
-          <div class="project-links">
-            
-                    <a href>le lien de projet</a>
 
+      <!-- Projet 2 -->
+      <div class="project-card fade-in visible">
+
+        <div class="project-icons">
+          <a href="#" target="_blank"><i class="fa-solid fa-link"></i></a>
+          <a href="#" target="_blank"><i class="fa-brands fa-github"></i></a>
+        </div>
+
+        <div class="project-image">
+          <img src="https://i.ibb.co/MkG9Dm0m/9294a050deb8.jpg"
+               alt="Site web de gestion des alertes citoyennes ">
+        </div>
+
+        <div class="project-content">
+          <h3 class="project-title">Application web de gestion des alertes citoyennes</h3>
+
+          <p class="project-description">
+            Conception et développement d’un site web permettant à la commune d’envoyer automatiquement des alertes aux citoyens (annonces officielles, urgences, événements).
+          </p>
+
+          <div class="project-tech">
+            <span class="tech-tag">HTML</span>
+            <span class="tech-tag">CSS</span>
+            <span class="tech-tag">JavaScript</span>
+            <span class="tech-tag">PHP</span>
+            <span class="tech-tag">SQL / Laravel</span>
           </div>
         </div>
       </div>
-    
+
+      <!-- Projet 3 -->
       <div class="project-card fade-in visible">
-        <div class="project-image">
-          <img src="https://i.ibb.co/fdcp5PmL/9297b803beac.jpg" alt="Projet des services d'informatiques ">
+
+        <div class="project-icons">
+          <a href="#" target="_blank"><i class="fa-solid fa-link"></i></a>
+          <a href="#" target="_blank"><i class="fa-brands fa-github"></i></a>
         </div>
+
+        <div class="project-image">
+          <img src="https://i.ibb.co/fdcp5PmL/9297b803beac.jpg"
+               alt="Projet des services d'informatiques ">
+        </div>
+
         <div class="project-content">
-          <h3 class="project-title">Projet des services d'informatiques </h3>
-          <p class="project-description">Le projet des services informatiques a pour objectif de développer et gérer des solutions numériques répondant aux besoins des utilisateurs et des organisations. Il comprend la création, la maintenance et l’optimisation de logiciels, bases de données, réseaux et applications web. Ce projet permet de faciliter le traitement de l’information, améliorer l’efficacité et assurer la sécurité des données.
+          <h3 class="project-title">Projet des services informatiques</h3>
 
-Il inclut également des services comme l’assistance technique, le support aux utilisateurs et la formation sur les outils numériques. Les participants acquièrent ainsi des compétences en programmation, administration des systèmes, cybersécurité et gestion de projets informatiques, tout en répondant aux besoins technologiques actuels.</p>
-          <div class="project-tech"><span class="tech-tag">ajax</span><span class="tech-tag">html</span><span class="tech-tag">css</span><span class="tech-tag">php</span><span class="tech-tag">laravel.</span></div>
-          <div class="project-links">
-                    <a href>le lien de projet</a>
+          <p class="project-description">
+            Conception et gestion de solutions numériques pour améliorer l’efficacité, la sécurité et la
+            gestion de l’information, tout en assurant support et formation aux utilisateurs.
+          </p>
 
-            
+          <div class="project-tech">
+            <span class="tech-tag">AJAX</span>
+            <span class="tech-tag">HTML</span>
+            <span class="tech-tag">CSS</span>
+            <span class="tech-tag">PHP</span>
+            <span class="tech-tag">Laravel</span>
           </div>
         </div>
       </div>
-    
+
+      <!-- Projet 4 -->
       <div class="project-card fade-in visible">
+
+        <div class="project-icons">
+          <a href="#" target="_blank"><i class="fa-solid fa-link"></i></a>
+          <a href="#" target="_blank"><i class="fa-brands fa-github"></i></a>
+        </div>
+
         <div class="project-image">
           <img src="https://i.ibb.co/XZJyKxRz/85f0150d8032.png" alt="Donut game">
         </div>
+
         <div class="project-content">
-          <h3 class="project-title">Donut game</h3>
-          <p class="project-description">Donut Game Project – AI + Computer Vision 🎮
+          <h3 class="project-title">Donut Game</h3>
 
-J’ai créé un jeu interactif de donuts qui utilise la reconnaissance des doigts pour contrôler le joueur !
-Le principe est simple : il suffit de bouger son doigt pour guider le récupérateur de donuts, collecter un maximum de donuts et voir son score final à la fin de la partie.
+          <p class="project-description">
+            Jeu interactif contrôlé par la reconnaissance des doigts, permettant de collecter des donuts et
+            suivre le score en temps réel.
+          </p>
 
-Ce projet combine Python, la vision par ordinateur (OpenCV) et de la logique de jeu pour offrir une expérience amusante et interactive.
-Il m’a permis d’explorer l’interaction basée sur l’IA et de renforcer mes compétences en reconnaissance de gestes en temps réel.</p>
-          <div class="project-tech"><span class="tech-tag">Python</span></div>
-          <div class="project-links">
-                    <a href>le lien de projet</a>
-
-                      
+          <div class="project-tech">
+            <span class="tech-tag">Python</span>
           </div>
         </div>
       </div>
-    
-       <div class="project-card fade-in visible">
-    <div class="project-image">
-      <span>AI Face Emotion & Persona Overlay</span>
-    </div>
-    <div class="project-content">
-      <h3 class="project-title">AI Face Emotion & Persona Overlay</h3>
-      <p class="project-description">
-        Projet personnel / Démonstration en temps réel
 
-        Application webcam en temps réel détectant les visages et inférant les émotions, 
-        avec une interface graphique interactive et la possibilité de prendre des captures 
-        d’écran.
+      <!-- Projet 5 -->
+      <div class="project-card fade-in visible">
 
-        Ce projet combine Python, OpenCV, DeepFace, Hugging Face, PyTorch (optionnel) 
-        et un HUD graphique via overlay_utils.py pour une expérience interactive.
-      </p>
-      <div class="project-tech">
-        <span class="tech-tag">Python</span>
-        <span class="tech-tag">OpenCV</span>
-        <span class="tech-tag">DeepFace</span>
-        <span class="tech-tag">PyTorch</span>
-        <span class="tech-tag">HUD Overlay</span>
+        <div class="project-icons">
+          <a href="#" target="_blank"><i class="fa-solid fa-link"></i></a>
+          <a href="#" target="_blank"><i class="fa-brands fa-github"></i></a>
+        </div>
+
+        <div class="project-image">
+          <span>AI Face Emotion & Persona Overlay</span>
+        </div>
+
+        <div class="project-content">
+          <h3 class="project-title">AI Face Emotion & Persona Overlay</h3>
+
+          <p class="project-description">
+            Application webcam en temps réel détectant les visages et les émotions, avec interface
+            interactive et capture d’images.
+          </p>
+
+          <div class="project-tech">
+            <span class="tech-tag">Python</span>
+            <span class="tech-tag">OpenCV</span>
+            <span class="tech-tag">DeepFace</span>
+            <span class="tech-tag">PyTorch</span>
+            <span class="tech-tag">HUD Overlay</span>
+          </div>
+        </div>
       </div>
-      <div class="project-links">
-        <a href>le lien de projet</a>
-      </div>
-    </div>
-</div>
 
-          
-    </section>
-<!-- Education Section -->
- <section id="experience" class="section experience">
+    </div>
+  </div>
+</section>
+
+<section id="experience" class="section experience">
   <div class="container">
+
     <h2 class="section-title fade-in visible">Éducation</h2>
     <p class="section-subtitle fade-in visible">Mon parcours académique</p>
 
     <div class="experience-timeline">
 
+      <!-- Item -->
       <div class="experience-item fade-in visible">
+        <span class="timeline-dot"></span>
+
         <div class="experience-card">
           <div class="experience-header">
-            <div>
-              <h3 class="experience-title">
-                Licence — Ingénierie en Intelligence Artificielle et Sciences des Données
-              </h3>
-              <p class="experience-company">
-                École Supérieure de Technologie — Essaouira, Maroc
-              </p>
-            </div>
+            <h3 class="experience-title">
+              Licence — Ingénierie en Intelligence Artificielle et Sciences des Données
+            </h3>
+            <p class="experience-company">
+              École Supérieure de Technologie — Essaouira, Maroc
+            </p>
             <span class="experience-duration">2025 — Présent</span>
           </div>
         </div>
       </div>
 
+      <!-- Item -->
       <div class="experience-item fade-in visible">
+        <span class="timeline-dot"></span>
+
         <div class="experience-card">
           <div class="experience-header">
-            <div>
-              <h3 class="experience-title">
-                BTS — Développement des Systèmes d’Information
-              </h3>
-              <p class="experience-company">
-                Lycée Qualifiant Lissane Eddine Ben El Khatib — Laâyoune, Maroc
-              </p>
-            </div>
+            <h3 class="experience-title">
+              BTS — Développement des Systèmes d’Information
+            </h3>
+            <p class="experience-company">
+              Lycée Qualifiant Lissane Eddine Ben El Khatib — Laâyoune, Maroc
+            </p>
             <span class="experience-duration">2023 — 2025</span>
           </div>
         </div>
       </div>
 
+      <!-- Item -->
       <div class="experience-item fade-in visible">
+        <span class="timeline-dot"></span>
+
         <div class="experience-card">
           <div class="experience-header">
-            <div>
-              <h3 class="experience-title">
-                Baccalauréat — Sciences Physiques
-              </h3>
-              <p class="experience-company">
-                Lycée Qualifiant El Marsa — Al Marsa
-              </p>
-            </div>
+            <h3 class="experience-title">
+              Baccalauréat — Sciences Physiques
+            </h3>
+            <p class="experience-company">
+              Lycée Qualifiant El Marsa — Al Marsa
+            </p>
             <span class="experience-duration">2020 — 2023</span>
           </div>
         </div>
@@ -560,6 +687,7 @@ Il m’a permis d’explorer l’interaction basée sur l’IA et de renforcer m
     </div>
   </div>
 </section>
+
 
     <!-- Experience Section -->
  <section id="experience" class="section experience">
@@ -639,6 +767,11 @@ Il m’a permis d’explorer l’interaction basée sur l’IA et de renforcer m
 
       <!-- FABLAB -->
       <div class="project-card fade-in visible">
+
+        <div class="project-icons">
+          <a href="#" target="_blank"><i class="fa-solid fa-link"></i></a>
+        </div>
+
         <div class="project-content">
           <h3 class="project-title">Participation — FABLAB</h3>
 
@@ -660,6 +793,11 @@ Il m’a permis d’explorer l’interaction basée sur l’IA et de renforcer m
 
       <!-- Python -->
       <div class="project-card fade-in visible">
+
+        <div class="project-icons">
+          <a href="#" target="_blank"><i class="fa-solid fa-link"></i></a>
+        </div>
+
         <div class="project-content">
           <h3 class="project-title">Certificat en Python</h3>
 
@@ -674,6 +812,11 @@ Il m’a permis d’explorer l’interaction basée sur l’IA et de renforcer m
 
       <!-- Site Web avec ChatGPT & Canva -->
       <div class="project-card fade-in visible">
+
+        <div class="project-icons">
+          <a href="#" target="_blank"><i class="fa-solid fa-link"></i></a>
+        </div>
+
         <div class="project-content">
           <h3 class="project-title">Création de site web avec ChatGPT & Canva</h3>
 
@@ -691,31 +834,42 @@ Il m’a permis d’explorer l’interaction basée sur l’IA et de renforcer m
 </section>
 
 
+
     <!-- Contact Section -->
     <section id="contact" class="section contact">
             <div class="container">
-                    <h2 class="section-title fade-in visible">✔️ Restons en contact</h2>
+                    <h2 class="section-title fade-in visible"> Restons en contact</h2>
                     <div class="contact-content">
                             <p class="section-subtitle fade-in visible">Restons en contact afin d’échanger sur de futures opportunités.</p>
                             <div class="social-links">
-                <form id="contactForm" style="max-width: 500px; margin: 0 auto; padding: 25px; border: 2px solid #8a2be2; border-radius: 12px; box-shadow: 0 4px 12px rgba(0,0,0,0.1); background-color: #fff; display: flex; flex-direction: column; gap: 15px;">
+   <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
+<script>
+  (function(){
+    emailjs.init("jamaljamila990@gmail.com"); // Remplace par ton User ID EmailJS
+  })();
+</script>                           
+             <form id="contactForm" 
+      style="max-width: 700px; width: 90%; margin: 0 auto; padding: 30px; border: 2px solid #8a2be2; border-radius: 12px; box-shadow: 0 6px 16px rgba(0,0,0,0.15); background-color: #fff; display: flex; flex-direction: column; gap: 20px;">
   
-  <input type="text" id="name" placeholder="Nom" required 
-         style="padding: 10px 12px; border: 1px solid #ccc; border-radius: 8px; font-size: 14px;">
-  
-  <input type="email" id="email" placeholder="Email" required 
-         style="padding: 10px 12px; border: 1px solid #ccc; border-radius: 8px; font-size: 14px;">
-  
-  <textarea id="message" placeholder="Message" required rows="5"
-            style="padding: 10px 12px; border: 1px solid #ccc; border-radius: 8px; font-size: 14px; resize: vertical;"></textarea>
-  
+  <input type="text" id="name" name="name" placeholder="Nom" required 
+         style="padding: 14px 16px; border: 1px solid #ccc; border-radius: 8px; font-size: 16px;">
+
+  <input type="email" id="email" name="email" placeholder="Email" required 
+         style="padding: 14px 16px; border: 1px solid #ccc; border-radius: 8px; font-size: 16px;">
+
+  <textarea id="message" name="message" placeholder="Message" required rows="6"
+            style="padding: 14px 16px; border: 1px solid #ccc; border-radius: 8px; font-size: 16px; resize: vertical;"></textarea>
+
   <button type="submit" 
-          style="background:#8a2be2; color:white; border:none; padding:12px; border-radius:8px; font-size: 16px; cursor:pointer; transition: background 0.3s;">
+          style="background:#8a2be2; color:white; border:none; padding:14px; border-radius:8px; font-size: 18px; cursor:pointer; transition: background 0.3s;">
     Envoyer
   </button>
 </form>
 
-                  <p id="confirmation" style="display:none;color:green;">Message envoyé !</p>
+<p id="confirmation" style="display:none; color: #fff; background-color: #28a745; text-align:center; padding:10px 15px; border-radius: 8px; font-weight: bold; margin-top:15px;">
+  ✅ Votre message a été envoyé avec succès !
+</p>
+
                    <p class="section-subtitle fade-in visible"><strong>Vous pouvez également accéder à mes comptes grâce aux liens suivants.</strong></p> 
                                       
     <a href="https://www.linkedin.com/in/samia-ait-rami-a6b5292b9/" target="_blank" class="social-link fade-in visible">
@@ -868,20 +1022,21 @@ document.addEventListener('DOMContentLoaded', () => {
           
     </script>
     <script>
-document.getElementById('contactForm').addEventListener('submit', function(e){
-  e.preventDefault();
+const form = document.getElementById('contactForm');
+  const confirmation = document.getElementById('confirmation');
 
-  const name = document.getElementById('name').value.trim();
-  const email = document.getElementById('email').value.trim();
-  const message = document.getElementById('message').value.trim();
+  form.addEventListener('submit', function(e) {
+    e.preventDefault();
 
-  if(name && email && message){
-    document.getElementById('confirmation').style.display = 'block';
-    this.reset();
-  }
-});
+    // Envoyer le formulaire via EmailJS
+    emailjs.sendForm('jamaljamila990@gmail.com', 'YOUR_TEMPLATE_ID', this)
+      .then(() => {
+        confirmation.style.display = 'block';
+        form.reset(); // réinitialiser le formulaire
+      }, (error) => {
+        alert('Erreur lors de l\'envoi du message : ' + error.text);
+      });
+  });
 </script>
 </body></html>
-
-
 
