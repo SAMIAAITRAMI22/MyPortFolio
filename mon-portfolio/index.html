@@ -845,7 +845,7 @@
    <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
 <script>
   (function(){
-    emailjs.init("jamaljamila990@gmail.com"); // Remplace par ton User ID EmailJS
+    emailjs.init("C9A1EcLBEe4FasHvZ"); // Remplace par ton User ID EmailJS
   })();
 </script>                           
              <form id="contactForm" 
@@ -1023,20 +1023,20 @@ document.addEventListener('DOMContentLoaded', () => {
     </script>
     <script>
 const form = document.getElementById('contactForm');
-  const confirmation = document.getElementById('confirmation');
+const confirmation = document.getElementById('confirmation');
 
-  form.addEventListener('submit', function(e) {
-    e.preventDefault();
+form.addEventListener('submit', function(e) {
+  e.preventDefault();
 
-    // Envoyer le formulaire via EmailJS
-    emailjs.sendForm('jamaljamila990@gmail.com', 'YOUR_TEMPLATE_ID', this)
-      .then(() => {
-        confirmation.style.display = 'block';
-        form.reset(); // réinitialiser le formulaire
-      }, (error) => {
-        alert('Erreur lors de l\'envoi du message : ' + error.text);
-      });
-  });
+  emailjs.sendForm('service_fafb4jh', 'template_pcwb16k', this)
+    .then(() => {
+      confirmation.style.display = 'block';
+      form.reset();
+    }, (error) => {
+      alert('Erreur lors de l\'envoi du message : ' + error.text);
+    });
+});
+
 </script>
 </body></html>
 
